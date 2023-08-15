@@ -1,0 +1,22 @@
+{
+  "name": "My Extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://web.whatsapp.com/"],
+      "css": ["/static/css/main.css", "/static/css/content.css"],
+      "js": ["/static/js/content.js"]
+    }
+  ],
+  "icons": {
+    "16": "16.png",
+    "32": "32.png",
+    "48": "48.png",
+    "64": "64.png",
+    "128": "128.png"
+  }
+}
